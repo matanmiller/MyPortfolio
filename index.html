@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matan Miller Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=2.6">
+    <link rel="icon" href="Images/icons/site-favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="page-container">
+        
+        <!---------Header--------->
+        <header class="header-container">
+            <div class="container">
+                <nav class="nav-container">
+                    <h2>Matan Miller</h2>
+
+                    <button class="hamburger-button" type="button" onclick="toggleMenu()" aria-label="Open navigation menu">
+                        <img src="Images/icons/hamburger-menu-icon.svg" alt="menu">
+                    </button>
+
+                    <ul class="nav-link-container" id="navLinks">
+                        <li><a href="#home" class="nav-link" onclick="closeMenu()">Home</a></li>
+                        <li><a href="#about" class="nav-link" onclick="closeMenu()">About</a></li>
+                        <li><a href="#projects" class="nav-link" onclick="closeMenu()">Projects</a></li>
+                        <li><a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!---------Main--------->
+
+        <main class="main-container">
+            <!---------Home Section--------->
+            <section class="home-section" id="home">
+                <div class="home-container container">
+                    <div class="home-content">                       
+                        <h1>Software Engineering Student</h1>
+
+                        <p>
+                            I am a software engineering student interested in the world of software
+                            development.Alongside my studies, I am taking a Full-Stack Bootcamp to
+                            strengthen my practical web development skills.
+                        </p>
+                        <a href="#contact" class="home-button button rounded-corners-button">Get in touch</a>
+                    </div>
+                    <div class="home-image-container">
+                        <div class="home-image-circle">
+                            <img src="Images/matan.jpeg" alt="photo of me">
+                        </div>
+                    </div>                   
+                </div>
+            </section>
+            <!---------About Section--------->
+            <section class="about-section" id="about"> 
+                <div class="about-container container">
+                    <div class="about-content">
+                        <h2>About Me</h2>
+
+                        <p>
+                            I am a software engineering student with a strong interest in
+                            software development. I enjoy learning how systems work, improving
+                            my coding skills, and turning ideas into real projects.
+                        </p>
+
+                        <p>
+                            Alongside my academic studies, I am taking a Full-Stack Bootcamp
+                            where I am strengthening my practical web development skills.
+                            I am focused on building clean, responsive, and user-friendly
+                            web applications.
+                        </p>
+                    </div>
+                    <div class="skills-content">
+                        <h2>Skills</h2>
+                        <div class="skill-item">
+                            <p class="skill-name">Python</p>
+
+                            <div class="skill-bar-empty rounded-bar">
+                                <div class="skill-bar-fill rounded-bar" id="fillPython"></div>
+                            </div>                                  
+                        </div>
+                        <div class="skill-item">
+                            <p class="skill-name">C++</p>
+
+                            <div class="skill-bar-empty rounded-bar">
+                                <div class="skill-bar-fill rounded-bar" id="fillJava"></div>
+                            </div>                
+                        </div>
+                        <div class="skill-item">
+                            <p class="skill-name">C</p>
+
+                            <div class="skill-bar-empty rounded-bar">
+                                <div class="skill-bar-fill rounded-bar" id="fillJavaScript"></div>
+                            </div>                                  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!---------Projects Section--------->
+            <section class="projects-section" id="projects">
+                <div class="projects-container container">
+                    <h2> My Projects</h2>
+                    <div class="projects-cards-container">
+                        <div class="project-card rounded-card">
+                            <div class="project-image-container">
+                                <img src="Images/projects/privatelessons-preview.png" alt="PrivateLessons project image">
+                            </div>
+                            <div class="project-info-container">
+                                <h3>PrivateLessons</h3>
+                                <p>
+                                    An online platform for booking private lessons. Students can
+                                    browse tutors, book sessions, and manage their schedule —
+                                    all in one place.
+                                </p>
+                                <a href="https://www.privatelessons.co.il" target="_blank" class="project-button button rounded-corners-button">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card rounded-card">
+                            <div class="project-image-container">
+                                <img src="Images/projects/studenthub-preview.png" alt="StudentHub project image">
+                            </div>
+                            <div class="project-info-container">
+                                <h3>StudentHub</h3>
+                                <span class="badge badge-in-progress">In Progress</span>
+                                <p>
+                                    The next evolution of PrivateLessons — a full hub for students
+                                    with advanced features, AI-powered tools, and everything a
+                                    student needs in one platform.
+                                </p>
+                                <a href="https://studenthub-israeli-s-2l2i.bolt.host/" target="_blank" class="project-button button rounded-corners-button">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card rounded-card">
+                            <div class="project-image-container">
+                                <img src="Images/projects/emergency-response.svg" alt="Emergency Response app project image">
+                            </div>
+                            <div class="project-info-container">
+                                <h3>Emergency Response</h3>
+                                <span class="badge badge-in-progress">In Progress</span>
+                                <p>
+                                    A hackathon project — an app that teaches civilians how to
+                                    respond to emergencies, providing clear step-by-step guidance
+                                    in critical real-life situations.
+                                </p>
+                                <a href="https://github.com/matanmiller" target="_blank" class="project-button button rounded-corners-button">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!---------Contact Section--------->
+            <section class="contact-section" id="contact">
+                <div class="contact-container container">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-content">
+                        <div class="form-container">
+                            <form id="contactForm">
+                                <div class="input-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                </div>
+
+                                <button class="contact-button button rounded-corners-button" type="submit">Send Message</button>
+                                <div class="form-status" id="formStatus"></div>
+
+                            </form>
+
+                        </div>
+                        <div class="contact-info-container">
+                            <div class="info-data-container">
+                                
+                                <h3>Contact Information</h3>
+                                <div class="contact-row">
+                                    <img src="Images/icons/mail.svg" alt="">
+                                    <a href="mailto:mmatan1999@gmail.com">mmatan1999@gmail.com</a>
+                                </div>
+                                <div class="contact-row">
+                                    <img src="Images/icons/phone.svg" alt="">
+                                    <a href="tel:+972549356470">+972-54-935-6470</a>
+                                </div>
+                                <div class="contact-row">
+                                    <img src="Images/icons/location.svg" alt="">
+                                    <a href="https://maps.google.com/?q=Haifa,Israel" target="_blank"><p>Haifa, Israel</p></a>
+                                </div>
+
+                            </div>
+                            <div class="social-buttons-container">
+                                <div class="social-image-container">                                 
+                                    <a href="https://www.linkedin.com/in/matanmiller/" target="_blank">
+                                        <img src="Images/socials/linkedin logo.svg" alt="LinkedIn logo">
+                                    </a>                                   
+                                </div>
+                                <div class="social-image-container">
+                                    <a href="https://github.com/matanmiller" target="_blank">
+                                        <img src="Images/socials/github logo.svg" alt="GitHub logo">
+                                    </a>     
+                                </div>
+                                <div class="social-image-container">
+                                    <a href="https://www.facebook.com/matan.miller.14" target="_blank">
+                                        <img src="Images/socials/facebook logo.svg" alt="Facebook logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!---------Footer --------->
+        <footer class="footer-container">
+            <div class="footer-content container">
+                <p>2026 Matan Miller. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <button class="scroll-top-button" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("open");
+        }
+        function closeMenu() {
+            document.getElementById("navLinks").classList.remove("open");
+        }
+
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add("visible");
+            } else {
+                scrollTopBtn.classList.remove("visible");
+            }
+        });
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        document.getElementById("contactForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector(".contact-button");
+            const status = document.getElementById("formStatus");
+
+            btn.textContent = "Sending...";
+            btn.disabled = true;
+            status.className = "form-status";
+            status.textContent = "";
+
+            try {
+                const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        name: form.name.value.trim(),
+                        email: form.email.value.trim(),
+                        message: form.message.value.trim(),
+                    }),
+                });
+
+                if (res.ok) {
+                    status.className = "form-status success";
+                    status.textContent = "Message sent! I'll get back to you soon.";
+                    form.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                status.className = "form-status error";
+                status.textContent = "Something went wrong. Please try again or email me directly.";
+            } finally {
+                btn.textContent = "Send Message";
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

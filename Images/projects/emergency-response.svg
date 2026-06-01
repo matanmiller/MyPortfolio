@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#2d0a0a"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF3B30"/>
+      <stop offset="100%" style="stop-color:#FF6B35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="#FF3B30" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="100" y1="0" x2="100" y2="800"/>
+    <line x1="200" y1="0" x2="200" y2="800"/>
+    <line x1="300" y1="0" x2="300" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="800"/>
+    <line x1="500" y1="0" x2="500" y2="800"/>
+    <line x1="600" y1="0" x2="600" y2="800"/>
+    <line x1="700" y1="0" x2="700" y2="800"/>
+    <line x1="800" y1="0" x2="800" y2="800"/>
+    <line x1="900" y1="0" x2="900" y2="800"/>
+    <line x1="1000" y1="0" x2="1000" y2="800"/>
+    <line x1="1100" y1="0" x2="1100" y2="800"/>
+  </g>
+
+  <!-- Glow circle behind cross -->
+  <circle cx="600" cy="340" r="190" fill="#FF3B30" opacity="0.08"/>
+  <circle cx="600" cy="340" r="150" fill="#FF3B30" opacity="0.08"/>
+
+  <!-- Shield shape -->
+  <path d="M600 130 L760 210 L760 370 Q760 480 600 540 Q440 480 440 370 L440 210 Z"
+        fill="none" stroke="#FF3B30" stroke-width="3" opacity="0.5"/>
+
+  <!-- Medical Cross -->
+  <rect x="560" y="210" width="80" height="260" rx="12" fill="url(#cross)"/>
+  <rect x="470" y="300" width="260" height="80" rx="12" fill="url(#cross)"/>
+
+  <!-- EKG / heartbeat line -->
+  <polyline points="80,580 200,580 240,580 260,510 290,650 320,510 350,580 420,580 460,580 480,530 500,580 1120,580"
+            fill="none" stroke="#FF3B30" stroke-width="3" opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Title -->
+  <text x="600" y="640" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    Emergency Response
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="695" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="400" fill="#FF6B35" text-anchor="middle" letter-spacing="2" opacity="0.9">
+    KNOW WHAT TO DO WHEN IT MATTERS
+  </text>
+</svg>
